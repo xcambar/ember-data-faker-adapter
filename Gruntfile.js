@@ -52,12 +52,9 @@ module.exports = function (grunt) {
       }
     },
     bump: {
-      options: {
-        files: ['package.json', 'bower.json'],
-        commitFiles: ['package.json', 'bower.json'],
-        tagName: '%VERSION%',
-        push: false
-      }
+      files: ['package.json', 'bower.json'],
+      commitFiles: ['package.json', 'bower.json'],
+      tagName: '%VERSION%'
     }
   });
   grunt.registerTask('default', ['concurrent:build']);
