@@ -14,7 +14,17 @@ module.exports = function (grunt) {
         src: './index.js',
         dest: './dist/faker-adapter.min.js'
       },
-      dev: {
+      unmin: {
+        options: {
+          browserifyOptions: {
+            standalone: 'XC.FakerAdapter',
+            debug: true
+          }
+        },
+        src: './index.js',
+        dest: './dist/faker-adapter.js'
+      },
+      watch: {
         options: {
           watch: true,
           keepAlive: true,
@@ -26,10 +36,22 @@ module.exports = function (grunt) {
         src: './index.js',
         dest: './dist/faker-adapter.js'
       },
+    },
+    watch: {
+      devBundle: {
+        files: ['./dist/faker-adapter.js'],
+        tasks: ['browserify:min']
+      }
+    },
+    concurrent: {
+      build: {
+        tasks: ['browserify:watch', 'watch'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
     }
   });
-  grunt.registerTask('default', function () {
-    console.log('Nothing defined as default yet');
-  });
-  grunt.registerTask('build', ['browserify']);
+  grunt.registerTask('default', ['concurrent:build']);
+  grunt.registerTask('build', ['browserify:unmin', 'browserify:min']);
 };
