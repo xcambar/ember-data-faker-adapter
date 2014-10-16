@@ -50,6 +50,14 @@ module.exports = function (grunt) {
           logConcurrentOutput: true
         }
       }
+    },
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        commitFiles: ['package.json', 'bower.json'],
+        tagName: '%VERSION%',
+        push: false
+      }
     }
   });
   grunt.registerTask('default', ['concurrent:build']);
