@@ -1,0 +1,26 @@
+{
+  "name": "ember-data-faker-adapter",
+  "version": "0.0.1",
+  "authors": [
+    "Xavier Cambar <xcambar@gmail.com>"
+  ],
+  "description": "An Ember-data adapter that generates fixtures with Faker.js",
+  "main": "index.js",
+  "keywords": [
+    "ember",
+    "ember-data",
+    "faker",
+    "fakerjs",
+    "fixtures",
+    "adapter"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/xcambar/ember-data-faker-adapter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

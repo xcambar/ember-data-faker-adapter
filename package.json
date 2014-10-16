@@ -1,0 +1,35 @@
+{
+  "name": "ember-data-faker-adapter",
+  "version": "0.0.1",
+  "description": "An Ember-data adapter that uses Faker.js to generate fixtures",
+  "main": "index.js",
+  "dependencies": {
+    "faker": "~2.0.1"
+  },
+  "devDependencies": {
+    "load-grunt-tasks": "~0.6.0",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "~3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xcambar/ember-data-faker-adapter.git"
+  },
+  "keywords": [
+    "ember",
+    "ember-data",
+    "faker",
+    "fakerjs",
+    "fixtures",
+    "adapter"
+  ],
+  "author": "Xavier Cambar <xcambar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcambar/ember-data-faker-adapter/issues"
+  },
+  "homepage": "https://github.com/xcambar/ember-data-faker-adapter"
+}
