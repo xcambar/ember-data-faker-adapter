@@ -1,6 +1,6 @@
 {
   "name": "ember-data-faker-adapter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An Ember-data adapter that uses Faker.js to generate fixtures",
   "main": "index.js",
   "dependencies": {
