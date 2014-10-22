@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         options: {
           browserifyOptions: {
             standalone: 'XC.FakerAdapter',
-            debug: true
+            debug: false
           }
         },
         src: './index.js',
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
           keepAlive: true,
           browserifyOptions: {
             standalone: 'XC.FakerAdapter',
-            debug: true
+            debug: false
           }
         },
         src: './index.js',
